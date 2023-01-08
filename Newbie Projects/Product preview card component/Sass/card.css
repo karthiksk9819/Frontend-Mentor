@@ -36,7 +36,7 @@ body {
 .card .card__image {
   width: 50%;
   min-height: 100%;
-  background: url("/Newbie Projects/Product preview card component/images/image-product-desktop.jpg") no-repeat 0 0;
+  background: url("../images/image-product-desktop.jpg") no-repeat 0 0;
   background-size: 100% 100%;
 }
 .card .card__info {
@@ -135,7 +135,7 @@ footer .attribution a {
   .card .card__image {
     width: 100%;
     min-height: 50%;
-    background: url("/Newbie Projects/Product preview card component/images/image-product-mobile.jpg") no-repeat 0 0/cover;
+    background: url("../images/image-product-mobile.jpg") no-repeat 0 0/cover;
     background-size: 100% 100%;
   }
   .card .card__info {

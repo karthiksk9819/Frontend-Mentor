@@ -36,7 +36,6 @@ Users should be able to:
 
 - Solution URL: [Repo](https://github.com/karthiksk9819/Frontend-Mentor/tree/main/Newbie%20Projects/Product%20preview%20card%20component)
 
-- Solution compiled CSS Folder: [Css Folder](https://github.com/karthiksk9819/Frontend-Mentor/tree/main/css)
 
 ## My process
 

@@ -46,7 +46,7 @@ body {
   .card__image {
     width: 50%;
     min-height: 100%;
-    background: url("/Newbie Projects/Product preview card component/images/image-product-desktop.jpg")
+    background: url("../images/image-product-desktop.jpg")
       no-repeat 0 0;
     background-size: 100% 100%;
   }
@@ -161,7 +161,7 @@ footer {
       width: 100%;
       min-height: 50%;
 
-      background: url("/Newbie Projects/Product preview card component/images/image-product-mobile.jpg")
+      background: url("../images/image-product-mobile.jpg")
         no-repeat 0 0 / cover;
       background-size: 100% 100%;
     }
