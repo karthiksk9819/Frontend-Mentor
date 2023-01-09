@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/karthiksk9819/Frontend-Mentor/tree/main/Newbie%20Projects/Interactive%20rating%20component)
+- Live Site URL: [Add live site URL here](https://app-2-blush.vercel.app/)
 
 
 
