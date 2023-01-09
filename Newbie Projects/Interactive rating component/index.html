@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="./index.js" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./Sass/rating.css">
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body>
+    <main>
+      <div class="component rating ">
+        <img src="./images/icon-star.svg" alt="star icon" class="rating__icon"/>
+        <h1 class="rating__header">How did we do?</h1>
+        <p class="rating__paragraph">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="rating__options">
+          <button class="btn" data-btn="1">1</button><button class="btn" data-btn="2">2</button
+          ><button class=" btn" data-btn="3">3</button><button class=" btn" data-btn="4">4</button
+          ><button class=" btn" data-btn="5">5</button>
+        </div>
+
+        <button class="rating__button">SUBMIT</button>
+      </div>
+
+      <div class="component rated ">
+        <img src="./images/illustration-thank-you.svg" alt="rated icon" class="rated__icon"/>
+        <div class="rated__selection"><p class="rated__selection__text">You selected <span class="rated__selection__option">3</span> out of 5</p></div>
+        <h1 class="rated__heading">Thank You!</h1>
+        <p class="rated__paragraph">We appreciate you taking the time to give a rating. If
+          you ever need more support, don’t hesitate to get in touch!</p>
+      
+      </div>
+    </main>
+
+ 
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/karthiksk9819"
+          >Karthik S K</a
+        >.
+      </div>
+    </footer>
+  </body>
+</html>
