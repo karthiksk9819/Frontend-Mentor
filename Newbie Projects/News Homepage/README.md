@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Repo](https://github.com/karthiksk9819/Frontend-Mentor/tree/main/Newbie%20Projects/Product%20preview%20card%20component)
+- Solution URL: [Repo](https://github.com/karthiksk9819/Frontend-Mentor/tree/main/Newbie%20Projects/News%20Homepage)
 
 
 ## My process
