@@ -31,6 +31,7 @@ body.addEventListener("click", (e) => {
       toggler();
 
       header.style.overflow = "hidden";
+      body.style.overflow = "auto";
     }
   }
 });
