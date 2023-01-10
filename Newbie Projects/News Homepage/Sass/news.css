@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-size: 0.82rem;
+}
+
+h1,
+h2 {
+  font-weight: 800;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+.main .main__heading {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+.main .main__section .section__button {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.main .main__section .section__paragraph {
+  font-size: 0.82rem;
+}
+
+.new .new__heading {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.new .new__section .ns__heading {
+  font-size: 1rem;
+}
+.new .new__section .ns__paragraph {
+  font-size: 0.82rem;
+}
+
+.snippets .snippets__section .section__info .info__id {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+.snippets .snippets__section .section__info .info__header {
+  font-size: 1em;
+  font-weight: 800;
+  margin-bottom: 0.5em;
+}
+.snippets .snippets__section .section__info .info__paragraph {
+  font-size: 0.75em;
+}
+
+.navbar .navbar__menu .navbar__menu__item {
+  font-size: 1.25rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  background-color: hsl(36deg, 100%, 99%);
+}
+
+.main .main__section .section__paragraph {
+  color: hsl(236deg, 13%, 42%);
+}
+.main .main__section .section__button {
+  height: 48px;
+  width: 185px;
+  background-color: hsl(5deg, 85%, 63%);
+  color: hsl(36deg, 100%, 99%);
+  border: none;
+  letter-spacing: 0.25rem;
+}
+
+.new {
+  background-color: hsl(240deg, 100%, 5%);
+  color: hsl(233deg, 8%, 79%);
+}
+.new .new__heading {
+  color: hsl(35deg, 77%, 62%);
+}
+.new .new__section:not(:last-child) {
+  border-bottom: 1px solid hsl(236deg, 13%, 42%);
+}
+.new .new__section .ns__heading {
+  color: hsl(36deg, 100%, 99%);
+}
+
+.snippets .snippets__section .section__info .info__id {
+  color: hsl(233deg, 8%, 79%);
+}
+.snippets .snippets__section .section__info .info__paragraph {
+  color: hsl(236deg, 13%, 42%);
+}
+
+.navbar .navbar__menu li {
+  list-style: none;
+}
+.navbar .navbar__menu li a {
+  color: hsl(236deg, 13%, 42%);
+  text-decoration: none;
+}
+
+body {
+  padding-inline: 160px;
+  padding-block: 90px;
+}
+
+header {
+  margin-bottom: 60px;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navbar .hamburger {
+  display: none;
+}
+header .navbar .hamburger .close {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
+header .navbar .hamburger .close img {
+  pointer-events: none;
+}
+header .navbar .hamburger .open {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
+header .navbar .hamburger .open img {
+  pointer-events: none;
+}
+header .navbar .navbar__menu {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  width: 100%;
+  align-items: center;
+}
+
+.filter {
+  display: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+main {
+  display: grid;
+  column-gap: 30px;
+  row-gap: 70px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+}
+main .main {
+  grid-column: 1/span 2;
+  display: grid;
+  column-gap: 55px;
+  grid-template-areas: "img img" "heading section";
+}
+main .main .mobile {
+  display: none;
+}
+main .main .main__image {
+  width: 100%;
+  grid-area: img;
+}
+main .main .main__heading {
+  width: 100%;
+  grid-area: heading;
+  margin-top: 30px;
+}
+main .main .main__section {
+  margin-top: 30px;
+  width: 95%;
+  grid-area: section;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+main .new {
+  grid-column: 3/4;
+  padding-inline: 28px;
+  padding-block: 30px;
+  height: 100%;
+  overflow: hidden;
+}
+main .new .new__heading {
+  margin-bottom: 0.75em;
+}
+main .new .new__section:not(.ns__heading:first-of-type) {
+  margin-top: 1.75em;
+}
+main .new .new__section .ns__heading {
+  margin-bottom: 0.75em;
+}
+main .new .new__section .ns__paragraph {
+  margin-bottom: 1.75em;
+}
+main .new .new__section .nsthree {
+  margin-bottom: 0;
+}
+main .snippets {
+  grid-column: span 3;
+  display: flex;
+  column-gap: 30px;
+  max-height: 80%;
+  overflow: hidden;
+}
+main .snippets .snippets__section {
+  max-width: 100%;
+  display: flex;
+  font-size: 1rem;
+  column-gap: 25px;
+}
+main .snippets .snippets__section .section__image {
+  max-width: 30%;
+  max-height: 50%;
+  object-fit: scale-down;
+  justify-self: center;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding-inline: 15px;
+    padding-block: 0px;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  header {
+    margin-top: -10px;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
+    max-width: 100vw;
+    /*  height: 100px;
+     max-height: auto */
+    margin-bottom: 0;
+  }
+  header .navbar {
+    height: 100vh;
+  }
+  header .navbar .navbar__menu.hidden {
+    transform: translateX(300px);
+  }
+  header .navbar .hero .navbar__menu {
+    transition: all 250ms ease;
+    position: absolute;
+    top: -90px;
+    margin-right: -10px;
+    width: 60vw;
+    height: calc(100vh + 100px);
+    padding-left: 25px;
+    padding-top: 200px;
+    row-gap: 25px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    flex-direction: column;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+  }
+  header .navbar .hero .navbar__menu a {
+    color: black;
+  }
+  header .navbar .navbar__logo {
+    position: absolute;
+    left: 0;
+    top: 25px;
+  }
+  header .navbar .hamburger {
+    z-index: 3;
+    position: absolute;
+    right: 0px;
+    top: 25px;
+    height: 40px;
+    width: 40px;
+    display: block;
+  }
+  header .navbar .hamburger .open {
+    opacity: 1;
+  }
+  header .navbar .hamburger .close {
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    display: grid;
+    place-content: center;
+  }
+  header .navbar .hamburger .closed {
+    opacity: 0;
+    pointer-events: none;
+  }
+  header .navbar .hamburger .opened {
+    opacity: 1;
+  }
+  .filter {
+    opacity: 1;
+    transition: all 80ms ease-in-out;
+  }
+  .filter.active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh + 85px);
+    background-color: rgba(0, 0, 0, 0.849);
+    z-index: 1;
+  }
+  main {
+    max-width: 90%;
+    background-color: rgba(255, 255, 255, 0.414);
+    position: absolute;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+  }
+  main .main {
+    display: flex;
+    flex-direction: column;
+  }
+  main .main .desktop {
+    display: none;
+  }
+  main .main .mobile {
+    width: 100%;
+    display: block;
+  }
+  main .main .main__heading {
+    font-size: 2.5rem;
+  }
+  main .main .main__section {
+    margin-top: 30px;
+    width: 95%;
+  }
+  main .main .main__section .section__button {
+    margin-top: 35px;
+  }
+  main .snippets {
+    flex-direction: column;
+    row-gap: 35px;
+  }
+}
+@media screen and (min-width: 376px) {
+  body {
+    min-width: 1440px;
+  }
+}
+.navbar .navbar__menu a:hover, .navbar .navbar__menu a:active {
+  color: hsl(5deg, 85%, 63%);
+}
+
+.main .main__section .section__button:hover, .main .main__section .section__button:active {
+  cursor: pointer;
+  color: hsl(36deg, 100%, 99%);
+  background-color: hsl(240deg, 100%, 5%);
+}
+
+.new .new__section .ns__heading:hover, .new .new__section .ns__heading:active {
+  cursor: pointer;
+  color: hsl(35deg, 77%, 62%);
+}
+
+.snippets .snippets__section .section__info .info__header:hover, .snippets .snippets__section .section__info .info__header:active {
+  cursor: pointer;
+  color: hsl(5deg, 85%, 63%);
+}
+
+footer {
+  opacity: 0.3;
+}
+footer .attribution {
+  font-size: 10px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228deg, 45%, 44%);
+  font-weight: 800;
+  text-decoration: none;
+}/*# sourceMappingURL=news.css.map */

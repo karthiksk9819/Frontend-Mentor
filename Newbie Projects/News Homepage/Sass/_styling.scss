@@ -1,0 +1,63 @@
+@use "./variables" as *;
+
+body {
+  background-color: $Off-white;
+}
+
+.main {
+  .main__section {
+    .section__paragraph {
+      color: $Dark-grayish-blue;
+    }
+    .section__button {
+      height: 48px;
+      width: 185px;
+      background-color: $Soft-red;
+      color: $Off-white;
+      border: none;
+      letter-spacing: 0.25rem;
+    }
+  }
+}
+.new {
+  background-color: $Very-dark-blue;
+  color: $Grayish-blue;
+  .new__heading {
+    color: $Soft-orange;
+  }
+
+  .new__section {
+    &:not(:last-child) {
+      border-bottom: 1px solid $Dark-grayish-blue;
+    }
+    .ns__heading {
+      color: $Off-white;
+    }
+  }
+}
+
+.snippets {
+  .snippets__section {
+    .section__info {
+      .info__id {
+        color: $Grayish-blue;
+      }
+      .info__paragraph {
+        color: $Dark-grayish-blue;
+      }
+    }
+  }
+}
+
+.navbar {
+  .navbar__menu {
+    li {
+      list-style: none;
+
+      a {
+        color: $Dark-grayish-blue;
+        text-decoration: none;
+      }
+    }
+  }
+}

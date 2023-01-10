@@ -1,0 +1,49 @@
+.navbar {
+  .navbar__menu {
+    a {
+      &:hover,
+      &:active {
+        color: hsl(5, 85%, 63%);
+      }
+    }
+  }
+}
+
+.main {
+  .main__section {
+    .section__button {
+      &:hover,
+      &:active {
+        cursor: pointer;
+        color: hsl(36, 100%, 99%);
+        background-color: hsl(240, 100%, 5%);
+      }
+    }
+  }
+}
+
+.new {
+  .new__section {
+    .ns__heading {
+      &:hover,
+      &:active {
+        cursor: pointer;
+        color: hsl(35, 77%, 62%);
+      }
+    }
+  }
+}
+
+.snippets {
+  .snippets__section {
+    .section__info {
+      .info__header {
+        &:hover,
+        &:active {
+          cursor: pointer;
+          color: hsl(5, 85%, 63%);
+        }
+      }
+    }
+  }
+}

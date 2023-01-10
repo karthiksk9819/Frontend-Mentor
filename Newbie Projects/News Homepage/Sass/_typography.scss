@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+$f-xxxlarge: 3.5rem;
+$f-xxlarge: 3rem;
+$f-xlarge: 2.5rem;
+$f-large: 2rem;
+$f-medium: 1.5rem;
+$f-small: 1.25rem;
+$f-xsmall: 1rem;
+$f-xxsmall: 0.82rem;
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+p {
+  font-size: $f-xxsmall; //15px
+}
+
+h1,
+h2 {
+  font-weight: 800;
+}
+h3 {
+  font-weight: 700;
+}
+
+.main {
+  .main__heading {
+    font-size: $f-xxxlarge;
+    line-height: 1;
+  }
+
+  .main__section {
+    .section__button {
+      font-size: $f-xsmall;
+      font-weight: 700;
+    }
+    .section__paragraph {
+      font-size: $f-xxsmall;
+    }
+  }
+}
+.new {
+  .new__heading {
+    font-size: $f-large;
+    font-weight: 700;
+  }
+  .new__section {
+    .ns__heading {
+      font-size: $f-xsmall;
+    }
+
+    .ns__paragraph {
+      font-size: $f-xxsmall;
+    }
+  }
+}
+.snippets {
+  .snippets__section {
+    .section__info {
+      .info__id {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-bottom: 0.5em;
+      }
+      .info__header {
+        font-size: 1em;
+        font-weight: 800;
+        margin-bottom: 0.5em;
+      }
+      .info__paragraph {
+        font-size: 0.75em;
+      }
+    }
+  }
+}
+
+.navbar {
+  .navbar__menu {
+    .navbar__menu__item {
+      font-size: $f-small;
+    }
+  }
+}
