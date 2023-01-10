@@ -314,6 +314,7 @@ main .snippets .snippets__section .section__image {
     display: block;
     max-width: 100%;
     overflow: hidden;
+    height: 100vh;
   }
   header {
     margin-top: -10px;
@@ -429,6 +430,7 @@ main .snippets .snippets__section .section__image {
   main .snippets {
     flex-direction: column;
     row-gap: 35px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 376px) {

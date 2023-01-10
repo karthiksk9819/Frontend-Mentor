@@ -5,6 +5,7 @@
       display: block;
       max-width: 100%;
       overflow: hidden;
+      height: 100vh;
     }
   
     header {
@@ -152,6 +153,7 @@
       .snippets {
         flex-direction: column;
         row-gap: 35px;
+        margin-bottom: 30px;
       }
     }
   }
