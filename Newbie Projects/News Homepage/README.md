@@ -41,6 +41,8 @@ Users should be able to:
 
 - Solution URL: [Repo](https://github.com/karthiksk9819/Frontend-Mentor/tree/main/Newbie%20Projects/News%20Homepage)
 
+- Live Site :[Live Site](https://frontend-mentor-rho-nine.vercel.app/)
+
 
 ## My process
 
