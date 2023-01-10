@@ -8,13 +8,13 @@ let clicked = false;
 let navbar = document.querySelector(".navbar__menu");
 
 let header = document.querySelector(".header");
-
+body.style.overflow = "auto";
 console.log(header);
 body.addEventListener("click", (e) => {
   if (e.target == openBtn) {
-    body.style.overflow = "hidden";
+   
     toggler();
-
+    body.style.overflow = "hidden";
     header.style.overflow = "auto";
 
     clicked = true;
